@@ -16,6 +16,7 @@
 
 
 <body>
+<!--  This is a PHP based Students Management App -->
     <div class="container">
         <div class="create-dialog" id="create-dialog">
             <h1>Add new Student</h1>
