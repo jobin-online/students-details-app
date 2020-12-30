@@ -1,0 +1,265 @@
+*{
+    padding: 0 ;
+    margin: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-stud{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border:none;
+    outline:none;
+    background-color:#005eff;
+    padding:8px 30px;
+    border-radius: 50px;
+    color:white;
+    transition: all 0.5s ease;
+    display:flex;
+    justify-content: space-around;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+
+.header{
+    width: 100%;;
+    height:200px;
+    background-image: linear-gradient(to bottom right, #0088FF, #FF00F7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header a{
+    border:none;
+    outline:none;
+    background-color:#005eff;
+    padding:8px 30px;
+    border-radius: 50px;
+    color:white;
+    transition: all 0.5s ease;
+    display:flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.header a:hover{
+    background-color:#629cff;
+}
+
+.data-table{
+    position:absolute;
+    top:200px;
+    max-width:800px;
+    width:100%;
+    height:1000px;
+    margin-top: -15px;
+}
+
+.table-heading{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    width:100%;
+    height:40px;
+    background-color: #919CFF;
+    border:none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    padding-left:10px;
+    padding-right: 10px;
+    align-items: center;
+    font-size:8px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#0019FF;
+}
+
+.head-si{
+    width:8%;
+}
+
+.head-roll{
+    width:10%;
+}
+
+.head-name{
+    width:22%;
+}
+
+.head-br{
+    width:12%;
+}
+
+.head-sem{
+    width: 12%;
+}
+
+.head-ph{
+    width: 16%;
+}
+
+.head-oper{
+    width: 20%;
+}
+
+.table-datas{
+    width:100%;
+    height:40px;
+    background-color: white;
+    border:0.3px solid #ececec;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    padding-left:10px;
+    padding-right: 10px;;
+    align-items: center;
+    font-size:8px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:black;
+    box-shadow: 5px 5px 5px #e7e5e5;
+    margin-bottom: 10px;
+}
+.head-oper{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around
+}
+
+.head-oper a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    padding:5px 20px;
+    border:none;
+    border-radius: 100px;
+    font-size:10px;
+}
+
+.head-oper a:nth-child(1){
+    background-color:rgb(23, 206, 23);
+}
+
+.head-oper a:nth-child(2){
+    background-color:red;
+}
+
+.create-dialog{
+    display:none;
+    position:absolute;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    max-width:700px;
+    width:100%;
+    height:500px;
+    background-color:rgb(243, 243, 243);
+    border-radius: 10px;
+    border:none;
+    box-shadow: 7px 7px 7px #575757;
+    text-align:center;
+}
+
+.create-dialog input {
+    width:50%;
+    height:20px;
+    outline:none;
+    border:0.5px solid rgb(207, 207, 207);
+    padding:2px 10px;
+    border-radius: 10px;
+}
+
+.input{
+    width:53%;
+    height:25px;
+    outline:none;
+    border:0.5px solid rgb(207, 207, 207);
+    padding:2px 10px;
+    border-radius: 10px;
+}
+
+.create-dialog h1{
+    margin: 30px 5px;
+}
+
+.create-dialog form .submit{
+    width:100px;
+    height:25px;
+    background-color:rgb(32, 218, 32);
+    border:none;
+    outline:none;
+}
+
+.create-dialog button{
+    width:100px;
+    height:25px;
+    background-color:red;
+    border:none;
+    border-radius: 10px;
+    outline:none;
+    color: white;
+}
+
+.update-dialog{
+    display:block;
+    position:absolute;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    max-width:700px;
+    width:100%;
+    height:500px;
+    background-color:rgb(243, 243, 243);
+    border-radius: 10px;
+    border:none;
+    box-shadow: 7px 7px 7px #575757;
+    text-align:center;
+}
+
+.update-dialog input {
+    width:50%;
+    height:20px;
+    outline:none;
+    border:0.5px solid rgb(207, 207, 207);
+    padding:2px 10px;
+    border-radius: 10px;
+}
+
+.update-dialog h1{
+    margin: 30px 5px;
+}
+
+.update-dialog form .submit{
+    width:100px;
+    height:25px;
+    background-color:rgb(32, 218, 32);
+    border:none;
+    outline:none;
+}
+
+.update-dialog button{
+    width:100px;
+    height:25px;
+    background-color:red;
+    border:none;
+    border-radius: 10px;
+    outline:none;
+    color: white;
+}
